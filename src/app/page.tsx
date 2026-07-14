@@ -34,7 +34,7 @@ export default function Home() {
           UCLA Statistics &amp; Data Science &rsquo;25
         </p>
         <h1 className="mb-5 text-5xl font-bold tracking-tight text-slate-900">
-          Hi, I&rsquo;m Ethan Ang
+          Hi, I&rsquo;m Elijah Ang
         </h1>
         <p className="mb-8 max-w-2xl text-lg leading-relaxed text-slate-600">
           I&rsquo;m a data scientist and developer passionate about turning raw

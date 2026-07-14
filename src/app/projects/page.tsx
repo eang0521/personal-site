@@ -3,8 +3,8 @@ import { GitFork, ExternalLink } from "lucide-react";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Projects | Ethan Ang",
-  description: "Data science, ML, and software projects by Ethan Ang.",
+  title: "Projects | Elijah Ang",
+  description: "Data science, ML, and software projects by Elijah Ang.",
 };
 
 // Populate this array as projects are added

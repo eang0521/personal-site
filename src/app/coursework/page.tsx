@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Coursework | Ethan Ang",
+  title: "Coursework | Elijah Ang",
   description: "UCLA coursework in statistics, data science, mathematics, and CS.",
 };
 

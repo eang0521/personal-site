@@ -15,11 +15,11 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Ethan Ang | Statistics & Data Science",
+  title: "Elijah Ang | Statistics & Data Science",
   description:
-    "Personal website of Ethan Ang — UCLA Statistics & Data Science graduate. Showcasing projects, coursework, and resume.",
+    "Personal website of Elijah Ang — UCLA Statistics & Data Science graduate. Showcasing projects, coursework, and resume.",
   openGraph: {
-    title: "Ethan Ang | Statistics & Data Science",
+    title: "Elijah Ang | Statistics & Data Science",
     description:
       "UCLA Statistics & Data Science graduate. Exploring data, building things.",
     type: "website",

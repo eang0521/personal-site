@@ -21,7 +21,7 @@ export default function Nav() {
           href="/"
           className="text-lg font-semibold tracking-tight text-slate-900 hover:text-blue-600 transition-colors"
         >
-          Ethan Ang
+          Elijah Ang
         </Link>
         <ul className="flex items-center gap-6">
           {links.map(({ href, label }) => (

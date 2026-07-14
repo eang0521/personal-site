@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import { GraduationCap, Briefcase, Wrench } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "About | Ethan Ang",
-  description: "Resume and background of Ethan Ang, UCLA Statistics & Data Science graduate.",
+  title: "About | Elijah Ang",
+  description: "Resume and background of Elijah Ang, UCLA Statistics & Data Science graduate.",
 };
 
 export default function AboutPage() {
