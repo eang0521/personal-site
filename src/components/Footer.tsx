@@ -19,7 +19,7 @@ export default function Footer() {
             <GitFork size={18} />
           </Link>
           <Link
-            href="mailto:eang0521@gmail.com"
+            href="mailto:eang0521@ucla.edu"
             aria-label="Email"
             className="text-slate-400 hover:text-slate-900 transition-colors"
           >
