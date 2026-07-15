@@ -31,7 +31,7 @@ export default function Home() {
       {/* Hero */}
       <section className="mb-20">
         <p className="mb-3 text-sm font-medium tracking-widest text-blue-600 uppercase">
-          UCLA Statistics &amp; Data Science &rsquo;25
+          UCLA Statistics &amp; Data Science &rsquo;26
         </p>
         <h1 className="mb-5 text-5xl font-bold tracking-tight text-slate-900">
           Hi, I&rsquo;m Elijah Ang
