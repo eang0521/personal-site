@@ -26,7 +26,7 @@ export default function Footer() {
             <Mail size={18} />
           </Link>
           <Link
-            href="https://www.linkedin.com/in/eang0521"
+            href="https://www.linkedin.com/in/elijah-p-ang"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="LinkedIn"
