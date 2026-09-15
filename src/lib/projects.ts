@@ -85,6 +85,22 @@ export const projects: Project[] = [
     ],
   },
   {
+    slug: "cfb-sim",
+    title: "CFB Dynasty Sim",
+    tagline: "A full college football recruiting and aging engine, ported from a spreadsheet, supporting a classic 72-team league or an expanded 144-team mega-league.",
+    date: "2026",
+    tags: ["TypeScript", "Next.js", "Sports Analytics", "Simulation"],
+    github: "https://github.com/eang0521/cfb-sim",
+    demo: "https://eang-cfb-sim.vercel.app",
+    body: [
+      {
+        paragraphs: [
+          "Like my NBA Game Simulator, this project started as a spreadsheet — a college football dynasty simulation with a full recruiting and aging engine. I've since ported it into a web app, supporting both the classic 72-team league and an expanded 144-team mega-league, complete with save slots for running multiple dynasties at once.",
+        ],
+      },
+    ],
+  },
+  {
     slug: "pokemon-rnr",
     title: "Pokémon Roll & Roam",
     tagline: "A Pokémon-themed roll-and-move board game built for the web.",
