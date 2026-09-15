@@ -82,7 +82,7 @@ export default function Home() {
         {/* Right: graduation photo */}
         <div className="sm:w-64 md:w-72 shrink-0">
           <Image
-            src="/graduation.png"
+            src="/graduation.jpg"
             alt="Elijah Ang at UCLA graduation, Pauley Pavilion"
             width={756}
             height={1008}
