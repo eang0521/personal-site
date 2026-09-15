@@ -113,10 +113,7 @@ export default function AboutPage() {
             <span className="text-sm text-slate-400">Jan 2026</span>
           </div>
           <div className="flex items-center justify-between px-6 py-4">
-            <div>
-              <span className="text-sm font-medium text-slate-900">SOA Financial Mathematics (FM) Exam</span>
-              <span className="ml-2 rounded-full bg-amber-50 px-2 py-0.5 text-xs font-medium text-amber-700">Sitting</span>
-            </div>
+            <span className="text-sm font-medium text-slate-900">SOA Financial Mathematics (FM) Exam</span>
             <span className="text-sm text-slate-400">Aug 2026</span>
           </div>
         </div>
