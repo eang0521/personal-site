@@ -146,8 +146,11 @@ export default function CourseworkPage() {
               </h2>
             </div>
 
+            {/* Takeaway */}
+            <p className="text-sm leading-relaxed text-slate-600">{takeaway}</p>
+
             {/* Topic pills */}
-            <div className="flex flex-wrap gap-1.5">
+            <div className="mt-auto flex flex-wrap gap-1.5">
               {topics.map((topic) => (
                 <span
                   key={topic}
@@ -157,11 +160,6 @@ export default function CourseworkPage() {
                 </span>
               ))}
             </div>
-
-            {/* Takeaway pull quote */}
-            <blockquote className="mt-auto border-l-2 border-blue-300 pl-4 text-sm italic leading-relaxed text-slate-500">
-              {takeaway}
-            </blockquote>
           </div>
         ))}
       </div>

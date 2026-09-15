@@ -1,42 +1,26 @@
 import type { Metadata } from "next";
-import { GitFork, ExternalLink } from "lucide-react";
 import Link from "next/link";
+import { ArrowRight } from "lucide-react";
+import { projects } from "@/lib/projects";
 
 export const metadata: Metadata = {
   title: "Projects | Elijah Ang",
   description: "Data science, ML, and software projects by Elijah Ang.",
 };
 
-// Populate this array as projects are added
-const projects: {
-  title: string;
-  description: string;
-  tags: string[];
-  github?: string;
-  demo?: string;
-}[] = [
-  {
-    title: "Pokémon Roll & Roam",
-    description:
-      "A Pokémon-themed roll-and-move board game built for the web.",
-    tags: ["Game", "JavaScript"],
-    demo: "https://eang0521.github.io/pokemon-rnr",
-  },
-];
-
 export default function ProjectsPage() {
   return (
-    <div className="mx-auto max-w-5xl px-6 py-16">
+    <div className="mx-auto max-w-4xl px-6 py-16">
       <h1 className="mb-2 text-4xl font-bold tracking-tight text-slate-900">
         Projects
       </h1>
       <p className="mb-12 text-lg text-slate-500">
-        Things I&rsquo;ve built — more coming soon.
+        Things I&rsquo;ve built — click any project to read more.
       </p>
 
       {projects.length === 0 ? (
         <div className="flex flex-col items-center justify-center rounded-xl border border-dashed border-slate-300 py-24 text-center">
-          <p className="mb-2 text-slate-500 font-medium">No projects listed yet.</p>
+          <p className="mb-2 font-medium text-slate-500">No projects listed yet.</p>
           <p className="text-sm text-slate-400">
             Check out{" "}
             <Link
@@ -52,50 +36,35 @@ export default function ProjectsPage() {
         </div>
       ) : (
         <div className="grid gap-6 sm:grid-cols-2">
-          {projects.map(({ title, description, tags, github, demo }) => (
-            <div
-              key={title}
-              className="flex flex-col gap-4 rounded-xl border border-slate-200 p-6 hover:shadow-md transition-shadow"
+          {projects.map(({ slug, title, tagline, date, tags }) => (
+            <Link
+              key={slug}
+              href={`/projects/${slug}`}
+              className="group flex flex-col gap-4 rounded-xl border border-slate-200 p-6 hover:border-blue-300 hover:shadow-md transition-all"
             >
               <div>
-                <h3 className="mb-1 font-semibold text-slate-900">{title}</h3>
-                <p className="text-sm leading-relaxed text-slate-500">
-                  {description}
+                <p className="mb-1 text-xs text-slate-400">{date}</p>
+                <h2 className="font-semibold text-slate-900 group-hover:text-blue-600 transition-colors">
+                  {title}
+                </h2>
+                <p className="mt-1 text-sm leading-relaxed text-slate-500">
+                  {tagline}
                 </p>
               </div>
-              <div className="flex flex-wrap gap-2">
+              <div className="flex flex-wrap gap-1.5">
                 {tags.map((tag) => (
                   <span
                     key={tag}
-                    className="rounded-full bg-blue-50 px-2.5 py-0.5 text-xs font-medium text-blue-700"
+                    className="rounded-full bg-slate-100 px-2.5 py-0.5 text-xs font-medium text-slate-600"
                   >
                     {tag}
                   </span>
                 ))}
               </div>
-              <div className="mt-auto flex gap-4">
-                {github && (
-                  <Link
-                    href={github}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-1.5 text-xs font-medium text-slate-600 hover:text-slate-900 transition-colors"
-                  >
-                    <GitFork size={14} /> Code
-                  </Link>
-                )}
-                {demo && (
-                  <Link
-                    href={demo}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-1.5 text-xs font-medium text-slate-600 hover:text-slate-900 transition-colors"
-                  >
-                    <ExternalLink size={14} /> Live demo
-                  </Link>
-                )}
-              </div>
-            </div>
+              <span className="mt-auto flex items-center gap-1 text-xs font-medium text-blue-600">
+                Read more <ArrowRight size={12} />
+              </span>
+            </Link>
           ))}
         </div>
       )}

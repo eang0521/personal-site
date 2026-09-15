@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <!-- Background -->
+  <rect width="512" height="512" rx="96" fill="#1D1132"/>
+
+  <!-- E: vertical bar + three horizontal bars -->
+  <line x1="106" y1="148" x2="106" y2="384" stroke="#8B6AE8" stroke-width="60" stroke-linecap="round"/>
+  <line x1="106" y1="148" x2="238" y2="148" stroke="#8B6AE8" stroke-width="60" stroke-linecap="round"/>
+  <line x1="106" y1="266" x2="208" y2="266" stroke="#8B6AE8" stroke-width="56" stroke-linecap="round"/>
+  <line x1="106" y1="384" x2="238" y2="384" stroke="#8B6AE8" stroke-width="60" stroke-linecap="round"/>
+
+  <!-- A: two diagonals + crossbar cutout -->
+  <line x1="300" y1="384" x2="384" y2="148" stroke="#8B6AE8" stroke-width="60" stroke-linecap="round"/>
+  <line x1="384" y1="148" x2="456" y2="384" stroke="#8B6AE8" stroke-width="60" stroke-linecap="round"/>
+  <line x1="325" y1="286" x2="432" y2="286" stroke="#1D1132" stroke-width="58" stroke-linecap="butt"/>
+
+  <!-- Dashed connector: E top-right → A apex -->
+  <line x1="266" y1="148" x2="356" y2="148" stroke="white" stroke-width="8" stroke-dasharray="16,12" stroke-linecap="round"/>
+
+  <!-- White endpoint dots -->
+  <circle cx="106" cy="148" r="28" fill="white"/>
+  <circle cx="238" cy="148" r="28" fill="white"/>
+  <circle cx="384" cy="148" r="28" fill="white"/>
+  <circle cx="456" cy="384" r="28" fill="white"/>
+</svg>
