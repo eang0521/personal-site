@@ -14,7 +14,15 @@ const projects: {
   tags: string[];
   github?: string;
   demo?: string;
-}[] = [];
+}[] = [
+  {
+    title: "Pokémon Roll & Roam",
+    description:
+      "A Pokémon-themed roll-and-move board game built for the web.",
+    tags: ["Game", "JavaScript"],
+    demo: "https://eang0521.github.io/pokemon-rnr",
+  },
+];
 
 export default function ProjectsPage() {
   return (
