@@ -101,6 +101,21 @@ export const projects: Project[] = [
     ],
   },
   {
+    slug: "berkeley-budget",
+    title: "City of Berkeley Budget Data 2012-15",
+    tagline: "Interactive Tableau dashboards visualizing the City of Berkeley's budget data from 2012 to 2015.",
+    date: "2026",
+    tags: ["Tableau", "Data Visualization", "Civic Data"],
+    demo: "https://public.tableau.com/app/profile/elijah.ang1735/viz/CityofBerkeleyBudgetData2012-15/Dashboard1?publish=yes",
+    body: [
+      {
+        paragraphs: [
+          "A set of interactive Tableau dashboards exploring the City of Berkeley's budget data from 2012 to 2015, built to make a few years of municipal spending easier to browse and compare.",
+        ],
+      },
+    ],
+  },
+  {
     slug: "pokemon-rnr",
     title: "Pokémon Roll & Roam",
     tagline: "A Pokémon-themed roll-and-move board game built for the web.",
