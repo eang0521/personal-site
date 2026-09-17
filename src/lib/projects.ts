@@ -36,7 +36,7 @@ export const projects: Project[] = [
   {
     slug: "nba-game-sim",
     title: "NBA Game Simulator",
-    tagline: "Scrapes and processes real NBA data to simulate individual games or full 82-game seasons, with a live play-by-play mode and 25 seasons of historical player data.",
+    tagline: "Scrapes and processes real NBA data to simulate individual games or full 82-game seasons, with a live play-by-play mode and 40 seasons of historical player data.",
     date: "2026",
     tags: ["Python", "Sports Analytics", "Simulation", "HTML"],
     github: "https://github.com/eang0521/nba-game-sim",
@@ -47,7 +47,7 @@ export const projects: Project[] = [
         paragraphs: [
           "I love sports: football, soccer, baseball, volleyball, Spikeball, you name it. But my favorite sport has always been basketball. As a younger kid, maybe 8 or 9, my love for basketball intersected with my love for numbers when I developed a simple basketball simulation using dice and pen and paper. Initially, the game was super simple: 1-on-1 basketball with simple shooting and rebounding mechanics. But as I continued to play this simulation, I realized there was potential for much more.",
           "Over the course of the next 10 years, I continued to refine my game. I added more players, turning it into a 3-on-3, and then a full 5-on-5 simulation. I started incorporating real NBA stats to make the games feel more realistic. And then in Summer 2026, I made the biggest improvement: I put the game into code. Now I could run simulations nearly instantly, collect data, and continue to tweak the rules to make the game as close to reality as possible.",
-          "Since then, the project has grown well beyond a single-game simulator. I've expanded the dataset to include 25 seasons of real NBA player data, added a live simulation mode that generates play-by-play logs in real time, and built out a full season simulation feature that can simulate an entire 82-game NBA season and produce standings, statistics, and playoff seeding.",
+          "Since then, the project has grown well beyond a single-game simulator. I've expanded the dataset to include 40 seasons of real NBA player data, added a live simulation mode that generates play-by-play logs in real time, and built out a full season simulation feature that can simulate an entire 82-game NBA season and produce standings, statistics, and playoff seeding.",
         ],
       },
     ],
