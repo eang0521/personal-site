@@ -17,23 +17,6 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    slug: "housing-avm",
-    title: "Contra Costa County Housing AVM",
-    tagline: "An automated valuation model that predicts residential home prices across Contra Costa County using machine learning.",
-    date: "2026",
-    tags: ["Python", "Machine Learning", "Jupyter", "Real Estate"],
-    github: "https://github.com/eang0521/housing-avm",
-    body: [
-      {
-        paragraphs: [
-          "As part of my 2025 internship with Data Detectives, I chose to work on a simple housing AVM as my data project. I started simple — very, very simple — with a dataset of just 15 homes manually entered from Redfin's website. Using these 15 house sales, I was able to implement simple tests and pipelines. I used SDV (Synthetic Data Vault) to generate synthetic data for the project and built a simple model. But I knew the project was far from complete.",
-          "I've recently taken this project back up. Using a scraper and data from Realtor.com, I've updated and expanded my dataset to include more than 3,000 homes. My results can be found in the code on my Github, linked above.",
-          "During my internship, I worked with a very limited set of features, selecting only the variables that were most important during my initial data analysis. These features only explain about 86% of the variance in house value in the full dataset — adding bathrooms, lot size, and neighborhood-level features will close most of the remaining gap.",
-        ],
-      },
-    ],
-  },
-  {
     slug: "nba-game-sim",
     title: "NBA Game Simulator",
     tagline: "Scrapes and processes real NBA data to simulate individual games or full 82-game seasons, with a live play-by-play mode and 40 seasons of historical player data.",
