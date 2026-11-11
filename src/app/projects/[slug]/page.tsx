@@ -32,7 +32,7 @@ export default async function ProjectPage({
   const project = getProject(slug);
   if (!project) notFound();
 
-  const { title, tagline, date, tags, github, demo, image, body } = project;
+  const { title, tagline, date, tags, github, demo, image, imageAlt, body } = project;
 
   return (
     <div className="mx-auto max-w-3xl px-6 py-16">
@@ -96,7 +96,7 @@ export default async function ProjectPage({
         <div className="mb-10 overflow-hidden rounded-xl border border-slate-200">
           <Image
             src={image}
-            alt={`${title} screenshot`}
+            alt={imageAlt ?? `${title} screenshot`}
             width={1200}
             height={675}
             className="w-full object-cover"

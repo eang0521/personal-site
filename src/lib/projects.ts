@@ -12,6 +12,7 @@ export type Project = {
   github?: string;
   demo?: string;
   image?: string;
+  imageAlt?: string;
   body: Section[];
 };
 
@@ -109,6 +110,23 @@ export const projects: Project[] = [
       {
         paragraphs: [
           "A Pokémon-themed take on the classic roll-and-move board game, built to play in the browser.",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "ticket-to-ride-ai",
+    title: "Ticket to Ride AI",
+    tagline: "A browser version of the board game Ticket to Ride with five levels of computer opponents, up to a neural network that taught itself through self-play on a laptop CPU.",
+    date: "2026",
+    tags: ["Python", "PyTorch", "Reinforcement Learning", "D3", "JavaScript"],
+    github: "https://github.com/eang0521/ttr-ai",
+    image: "/ttrai1.png",
+    imageAlt: "A Ticket to Ride game in progress against two computer opponents",
+    body: [
+      {
+        paragraphs: [
+          "A browser version of Ticket to Ride with five levels of computer opponents, from simple rule-based bots up to a neural network that taught itself through about 900,000 games of self-play (PPO) on a laptop CPU, with no GPU. The top level, Master, adds look-ahead search at play time and wins about 3 in 4 games against the network alone. I'm now training a graph neural network that isn't tied to one map, as a step toward a single model for new boards, ticket sets and player counts.",
         ],
       },
     ],
