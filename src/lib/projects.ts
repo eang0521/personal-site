@@ -18,6 +18,23 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    slug: "ticket-to-ride-ai",
+    title: "Ticket to Ride AI",
+    tagline: "A browser version of the board game Ticket to Ride with five levels of computer opponents, up to a neural network that taught itself through self-play on a laptop CPU.",
+    date: "2026",
+    tags: ["Python", "PyTorch", "Reinforcement Learning", "D3", "JavaScript"],
+    github: "https://github.com/eang0521/ttr-ai",
+    image: "/ttrai1.png",
+    imageAlt: "A Ticket to Ride game in progress against two computer opponents",
+    body: [
+      {
+        paragraphs: [
+          "A browser version of Ticket to Ride with five levels of computer opponents, from simple rule-based bots up to a neural network that taught itself through about 900,000 games of self-play (PPO) on a laptop CPU, with no GPU. The top level, Master, adds look-ahead search at play time and wins about 3 in 4 games against the network alone. I'm now training a graph neural network that isn't tied to one map, as a step toward a single model for new boards, ticket sets and player counts.",
+        ],
+      },
+    ],
+  },
+  {
     slug: "nba-game-sim",
     title: "NBA Game Simulator",
     tagline: "Scrapes and processes real NBA data to simulate individual games or full 82-game seasons, with a live play-by-play mode and 40 seasons of historical player data.",
@@ -37,17 +54,16 @@ export const projects: Project[] = [
     ],
   },
   {
-    slug: "quick-draw",
-    title: "Quick Draw",
-    tagline: "A tournament bracket creator for organizing and running single-elimination competitions.",
+    slug: "berkeley-budget",
+    title: "City of Berkeley Budget Data 2012-15",
+    tagline: "Interactive Tableau dashboards visualizing the City of Berkeley's budget data from 2012 to 2015.",
     date: "2026",
-    tags: ["Next.js", "TypeScript", "Full-Stack", "Supabase"],
-    github: "https://github.com/eang0521/quick-draw",
-    demo: "https://quick-draw-tourney.vercel.app/",
+    tags: ["Tableau", "Data Visualization", "Civic Data"],
+    demo: "https://public.tableau.com/app/profile/elijah.ang1735/viz/CityofBerkeleyBudgetData2012-15/Dashboard1?publish=yes",
     body: [
       {
         paragraphs: [
-          "One of my many passions is organizing sports tournaments and competitions. I designed this simple tool to help me record and share results from single-elimination, double-elimination, round robin, and swiss format tournaments.",
+          "A set of interactive Tableau dashboards exploring the City of Berkeley's budget data from 2012 to 2015, built to make a few years of municipal spending easier to browse and compare.",
         ],
       },
     ],
@@ -85,21 +101,6 @@ export const projects: Project[] = [
     ],
   },
   {
-    slug: "berkeley-budget",
-    title: "City of Berkeley Budget Data 2012-15",
-    tagline: "Interactive Tableau dashboards visualizing the City of Berkeley's budget data from 2012 to 2015.",
-    date: "2026",
-    tags: ["Tableau", "Data Visualization", "Civic Data"],
-    demo: "https://public.tableau.com/app/profile/elijah.ang1735/viz/CityofBerkeleyBudgetData2012-15/Dashboard1?publish=yes",
-    body: [
-      {
-        paragraphs: [
-          "A set of interactive Tableau dashboards exploring the City of Berkeley's budget data from 2012 to 2015, built to make a few years of municipal spending easier to browse and compare.",
-        ],
-      },
-    ],
-  },
-  {
     slug: "pokemon-rnr",
     title: "Pokémon Roll & Roam",
     tagline: "A Pokémon-themed roll-and-move board game built for the web.",
@@ -110,23 +111,6 @@ export const projects: Project[] = [
       {
         paragraphs: [
           "A Pokémon-themed take on the classic roll-and-move board game, built to play in the browser.",
-        ],
-      },
-    ],
-  },
-  {
-    slug: "ticket-to-ride-ai",
-    title: "Ticket to Ride AI",
-    tagline: "A browser version of the board game Ticket to Ride with five levels of computer opponents, up to a neural network that taught itself through self-play on a laptop CPU.",
-    date: "2026",
-    tags: ["Python", "PyTorch", "Reinforcement Learning", "D3", "JavaScript"],
-    github: "https://github.com/eang0521/ttr-ai",
-    image: "/ttrai1.png",
-    imageAlt: "A Ticket to Ride game in progress against two computer opponents",
-    body: [
-      {
-        paragraphs: [
-          "A browser version of Ticket to Ride with five levels of computer opponents, from simple rule-based bots up to a neural network that taught itself through about 900,000 games of self-play (PPO) on a laptop CPU, with no GPU. The top level, Master, adds look-ahead search at play time and wins about 3 in 4 games against the network alone. I'm now training a graph neural network that isn't tied to one map, as a step toward a single model for new boards, ticket sets and player counts.",
         ],
       },
     ],
